@@ -1,1 +1,8 @@
+.vscode/
 .mypy_cache
+generate_settings.build/
+*.out
+generate_settings
+*.exe
+*.cmd
+settings.py

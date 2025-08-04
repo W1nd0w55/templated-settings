@@ -1,7 +1,6 @@
 # templated-settings
 Templated settings generator written in Python
 
-
 # Usage
 ## As is
 ```
@@ -17,5 +16,10 @@ Default values are:
 ## Compiled with nuitka
 ```
 pip(3) install nuitka
-nuitka ./generate_settings.py
+nuitka ./generate_settings.py --no-deployment-flag=self-execution
+```
+
+# Example
+```
+python(3) generate_settings.py ./example -o settings.py -c (Dev|Prod)
 ```
