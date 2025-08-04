@@ -9,10 +9,10 @@ python(3) generate_settings.py project-path [-c CONFIG] [-C CONFIG-FILE] [-s SOU
 ```
 
 Default values are:\
-    -c (first one defined)\
-    -C (project-path)/ProjectConfigs.json\
-    -s (project-path)/ProjectSettings.py\
-    -o (project-path)/settings\
+    * -c (first one defined)\
+    * -C (project-path)/ProjectConfigs.json\
+    * -s (project-path)/ProjectSettings.py\
+    * -o (project-path)/settings
 
 ## Compiled with nuitka
 ```
