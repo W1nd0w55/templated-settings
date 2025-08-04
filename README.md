@@ -8,10 +8,10 @@ python(3) generate_settings.py project-path [-c CONFIG] [-C CONFIG-FILE] [-s SOU
 ```
 
 Default values are:\
-    * -c (first one defined)\
-    * -C (project-path)/ProjectConfigs.json\
-    * -s (project-path)/ProjectSettings.jinja\
-    * -o (project-path)/settings
+* -c (first one defined)\
+* -C (project-path)/ProjectConfigs.json\
+* -s (project-path)/ProjectSettings.jinja\
+* -o (project-path)/settings
 
 ## Compiled with nuitka
 ```
@@ -22,4 +22,14 @@ nuitka ./generate_settings.py --no-deployment-flag=self-execution
 # Example
 ```
 python(3) generate_settings.py ./example -o settings.py -c (Dev|Prod)
+```
+
+## Variables
+* config - One of your configs, for example:
+```
+{% if config == "Dev" %}
+SECRET_KEY = 'some-insecure-plain-text-dont-ever-use-this-in-prod-api-key'
+{% else %}
+SECRET_KEY = 'pretend-this-is-taken-in-from-an-obfuscated-file'
+{% endif %}
 ```
