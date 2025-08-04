@@ -7,10 +7,10 @@ Templated settings generator written in Python
 python(3) generate_settings.py project-path [-c CONFIG] [-C CONFIG-FILE] [-s SOURCE] [-o OUT]
 ```
 
-Default values are:\
-* -c (first one defined)\
-* -C (project-path)/ProjectConfigs.json\
-* -s (project-path)/ProjectSettings.jinja\
+Default values are:
+* -c (first one defined)
+* -C (project-path)/ProjectConfigs.json
+* -s (project-path)/ProjectSettings.jinja
 * -o (project-path)/settings
 
 ## Compiled with nuitka
